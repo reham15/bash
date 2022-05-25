@@ -1,0 +1,12 @@
+1-to generate public key
+ssh keygen -o
+cat .ssh/id_rsa.pub
+cat .ssh/id_rsa.pub>authorized_keys
+sshpass -p reham scp authorized_keys reham@192.168.203.131:~/.ssh/authorized_keys
+2-create the file of ips4
+touch ips.txt
+192.168.203.255 reham reham
+nano vm.sh
+add the script included in the screenshot
+
+
